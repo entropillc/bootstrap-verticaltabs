@@ -1,0 +1,32 @@
+.verticaltabs-container {
+  position: relative;
+  min-width: 600px;
+  min-height: 600px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.verticaltabs-container > .tabs {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 100%;
+  width: 1000%;
+  -webkit-transform-origin: 0 0;
+  -moz-transform-origin: 0 0;
+  -ms-transform-origin: 0 0;
+  -o-transform-origin: 0 0;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+}
+
+.verticaltabs-container > .tab-content {
+  width: 90%;
+  width: -webkit-calc(100% - 38px);
+  width: -moz-calc(100% - 38px);
+  width: -o-calc(100% - 38px);
+  width: calc(100% - 38px);
+}
