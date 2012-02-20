@@ -5,41 +5,37 @@
 	<title>Bootstrap Vertical Tabs Demo</title>
 	<link rel="stylesheet" type="text/css" href="bootstrap.css"/>
 	<link rel="stylesheet" type="text/css" href="bootstrap-verticaltabs.css"/>
-	<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
-	<script type="text/javascript" src="bootstrap-tabs.js"></script>
-	<script type="text/javascript">
-	$(function() {
-	  $('.tabs').tabs();
-	});
-	</script>
+	<script type="text/javascript" src="jquery-1.7.1.js"></script>
+	<script type="text/javascript" src="bootstrap-transition.js"></script>
+	<script type="text/javascript" src="bootstrap-tab.js"></script>
 </head>
 <body>
-  <div class="verticaltabs-container"> <!-- Wrap the Bootstrap Tabs/Pills in this container to position them vertically -->
-    <ul class="tabs">
-      <li class="active"><a href="#home">Home</a></li>
-      <li><a href="#profile">Profile</a></li>
-      <li><a href="#messages">Messages</a></li>
-      <li><a href="#settings">Settings</a></li>
-      <li><a href="#contact">Contact</a></li>
+  <div class="tabbable verticaltabs-container"> <!-- Wrap the Bootstrap Tabs/Pills in this container to position them vertically -->
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+      <li><a href="#profile" data-toggle="tab">Profile</a></li>
+      <li><a href="#messages" data-toggle="tab">Messages</a></li>
+      <li><a href="#settings" data-toggle="tab">Settings</a></li>
+      <li><a href="#contact" data-toggle="tab">Contact</a></li>
     </ul>
     <div class="tab-content">
-      <div class="tab-pane active" id="home">
+      <div class="tab-pane fade in active" id="home">
         <h3>Home</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed urna diam, ac gravida tellus. Mauris eu augue non arcu hendrerit consequat. Donec pharetra lacus ac ipsum tincidunt vestibulum. Aliquam erat volutpat. Phasellus tristique lectus nec massa scelerisque semper et id purus. Aenean mollis iaculis lacus, id tincidunt dolor malesuada a. Proin eget magna lorem. Nullam vel rhoncus sapien. Donec tincidunt nulla eget velit egestas auctor. Sed vitae aliquet nulla. Donec nec eros justo, semper mattis metus. Sed suscipit adipiscing lacus id pulvinar. Cras in dui turpis, at cursus lacus. Suspendisse volutpat dapibus nibh ac sollicitudin.</p>
       </div>
-      <div class="tab-pane" id="profile">
+      <div class="tab-pane fade" id="profile">
         <h3>Profile</h3>
         <p>Nunc feugiat risus vel diam hendrerit mattis ultrices urna bibendum. Ut ac est sit amet elit posuere lacinia. Ut a dui ligula. Maecenas quis sapien sit amet est porta elementum id vel nibh. Sed venenatis magna quis nisi fermentum aliquet. Morbi ultricies, urna eget semper feugiat, justo eros facilisis dolor, quis pulvinar purus nibh quis nunc. Duis eget ligula a nisl pellentesque laoreet. Suspendisse eu rhoncus erat. Quisque pharetra facilisis dignissim.</p>
       </div>
-      <div class="tab-pane" id="messages">
+      <div class="tab-pane fade" id="messages">
         <h3>Messages</h3>
         <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Curabitur vestibulum convallis ante, non iaculis nisl mattis sed. Duis auctor justo a lectus posuere ultrices. Phasellus sagittis convallis diam, sit amet lobortis est varius ac. Phasellus erat lorem, ornare non dignissim dictum, sodales et quam. Proin est velit, venenatis eget fermentum a, condimentum nec arcu. Praesent condimentum, elit ac sagittis porta, dolor neque posuere quam, vitae posuere est purus nec dui. Fusce ut arcu mauris, vitae congue mi. Sed nec tincidunt ligula. Donec ut lectus vitae justo tempus congue. Sed vitae ipsum eu ante ultricies aliquam eu ut lacus. Aenean fringilla, mauris tincidunt consectetur posuere, nisi quam lacinia erat, eget elementum libero lorem eget elit. Nunc non massa vel metus eleifend tincidunt. Donec ac libero non arcu rutrum ullamcorper eu vel felis. Quisque dignissim metus in dui sollicitudin vel placerat ligula dictum.</p>
       </div>
-      <div class="tab-pane" id="settings">
+      <div class="tab-pane fade" id="settings">
         <h3>Settings</h3>
         <p>Aenean dignissim lectus in magna fringilla euismod. Nullam erat sapien, lobortis nec pellentesque eu, molestie et risus. Pellentesque non sem magna. Morbi tristique, purus eu dignissim interdum, leo ante dignissim mauris, vitae aliquam tellus purus pellentesque enim. Aenean molestie fermentum ipsum, scelerisque egestas ante cursus et. Morbi lacus risus, malesuada in fermentum nec, mattis ullamcorper libero. Quisque magna velit, aliquet eu luctus nec, malesuada eget mauris. Nunc et congue eros. Morbi convallis, nulla at gravida suscipit, odio elit tincidunt urna, at pretium sapien lorem quis dolor. Praesent libero est, vestibulum vel ultricies ut, vestibulum non metus. Cras accumsan, metus quis ornare condimentum, dui sem elementum nulla, quis sollicitudin leo ipsum eu magna. Etiam auctor ultrices risus, vitae condimentum lectus feugiat a. Proin lacus sapien, lobortis id dapibus vitae, accumsan quis ipsum. Mauris quis lectus ut neque iaculis vestibulum ac in turpis. Proin pellentesque justo vel felis dignissim non iaculis dolor bibendum. Fusce vitae leo a urna imperdiet aliquam.</p>
       </div>
-      <div class="tab-pane" id="contact">
+      <div class="tab-pane fade" id="contact">
         <h3>Contact</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sed urna diam, ac gravida tellus. Mauris eu augue non arcu hendrerit consequat. Donec pharetra lacus ac ipsum tincidunt vestibulum. Aliquam erat volutpat. Phasellus tristique lectus nec massa scelerisque semper et id purus. Aenean mollis iaculis lacus, id tincidunt dolor malesuada a. Proin eget magna lorem. Nullam vel rhoncus sapien. Donec tincidunt nulla eget velit egestas auctor. Sed vitae aliquet nulla. Donec nec eros justo, semper mattis metus. Sed suscipit adipiscing lacus id pulvinar. Cras in dui turpis, at cursus lacus. Suspendisse volutpat dapibus nibh ac sollicitudin.</p>
         <p>Nunc feugiat risus vel diam hendrerit mattis ultrices urna bibendum. Ut ac est sit amet elit posuere lacinia. Ut a dui ligula. Maecenas quis sapien sit amet est porta elementum id vel nibh. Sed venenatis magna quis nisi fermentum aliquet. Morbi ultricies, urna eget semper feugiat, justo eros facilisis dolor, quis pulvinar purus nibh quis nunc. Duis eget ligula a nisl pellentesque laoreet. Suspendisse eu rhoncus erat. Quisque pharetra facilisis dignissim.</p>

@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 
-.verticaltabs-container > .tabs {
+.verticaltabs-container > .nav-tabs {
   display: block;
   position: fixed;
   top: 0;
@@ -17,16 +17,20 @@
   -moz-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   -o-transform-origin: 0 0;
-  -webkit-transform: rotate(90deg);
-  -moz-transform: rotate(90deg);
-  -ms-transform: rotate(90deg);
-  -o-transform: rotate(90deg);
+  transform-origin: 0 0;
+  -webkit-transform: translateX(-24px) rotate(90deg);
+  -moz-transform: translateX(-24px) rotate(90deg);
+  -ms-transform: translateX(-24px) rotate(90deg);
+  -o-transform: translateX(-24px) rotate(90deg);
+  transform: translateX(-24px) rotate(90deg);
 }
 
 .verticaltabs-container > .tab-content {
-  width: 90%;
-  width: -webkit-calc(100% - 38px);
-  width: -moz-calc(100% - 38px);
-  width: -o-calc(100% - 38px);
-  width: calc(100% - 38px);
+  position: absolute;
+  top: 0;
+  right: 58px;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  height: auto;
 }
